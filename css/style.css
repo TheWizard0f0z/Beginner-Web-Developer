@@ -1,27 +1,18 @@
 /* Global */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-$color-main: #d35400;
-$color-light: #ffffff;
-$color-dark: #000000;
-$color-dim: #f0f0f0;
-$font-text: "Josefin Sans", sans-serif;
-$font-header: "Open Sans", sans-serif;
-$font-textarea: "Raleway", sans-serif;
-
 body {
   margin: 0;
   text-align: center;
-  background: $color-light;
+  background: #ffffff;
   color: #3d3d3d;
   font-size: 16px;
   line-height: 1.7;
-  font-family: $font-text;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .container {
@@ -38,7 +29,7 @@ section {
   position: relative;
   font-size: 36px;
   margin: 0 0 60px 0;
-  font-family: $font-header;
+  font-family: "Open Sans", sans-serif;
 }
 
 .section-title::after {
@@ -49,11 +40,10 @@ section {
   width: 50px;
   height: 10px;
   transform: translateX(-50%);
-  background: $color-main;
+  background: #d35400;
 }
 
 /* Splash */
-
 .splash {
   height: 100vh;
   position: relative;
@@ -73,22 +63,22 @@ section {
 
 .splash i {
   font-size: 30px;
-  background: $color-main;
+  background: #d35400;
   width: 60px;
   height: 60px;
   line-height: 60px;
-  color: $color-light;
+  color: #ffffff;
   border-radius: 30%;
 }
 
 .page-title {
-  color: $color-light;
+  color: #ffffff;
   font-size: 60px;
   margin: 48px 0 0 0;
   position: relative;
   text-transform: uppercase;
-  font-family: $font-header;
-  text-shadow: 2px 4px 10px $color-dark;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 2px 4px 10px #000000;
 }
 
 .page-title::after {
@@ -99,21 +89,20 @@ section {
   width: 100px;
   height: 10px;
   transform: translateX(-50%);
-  background: $color-main;
+  background: #d35400;
 }
 
 .page-subtitle {
-  color: $color-light;
+  color: #ffffff;
   font-size: 18px;
   margin: 48px 0 0 0;
   text-transform: uppercase;
-  text-shadow: 2px 4px 10px $color-dark;
+  text-shadow: 2px 4px 10px #000000;
 }
 
 /* Intro */
-
 .intro {
-  background: $color-light;
+  background: #ffffff;
 }
 
 .intro p {
@@ -121,18 +110,16 @@ section {
   margin: 0 auto;
   padding: 48px 0;
   font-size: 24px;
-  border-top: 1px solid $color-dark;
-  border-bottom: 1px solid $color-dark;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 /* About */
-
 .about {
-  background: $color-dim;
+  background: #f0f0f0;
 }
 
 /* Skills */
-
 .skill-left,
 .skill-right {
   position: relative;
@@ -148,7 +135,8 @@ section {
 .skill-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 1s;
 }
 
@@ -171,7 +159,6 @@ section {
 }
 
 /* Gallery */
-
 .row::before,
 .row::after {
   clear: both;
@@ -180,7 +167,7 @@ section {
 }
 
 .gallery {
-  background: $color-dim;
+  background: #f0f0f0;
 }
 
 .gallery .row {
@@ -197,7 +184,8 @@ section {
 .gallery-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .gallery-item {
@@ -209,15 +197,15 @@ section {
 }
 
 .gallery-item p {
-  color: $color-light;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 2px 4px 10px $color-dark;
+  text-shadow: 2px 4px 10px #000000;
 }
 
 .btn {
-  background: $color-main;
-  color: $color-light;
+  background: #d35400;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   padding: 15px 24px;
@@ -231,7 +219,7 @@ section {
   display: none;
   width: 100%;
   height: 100%;
-  background: $color-dark;
+  background: #000000;
   opacity: 0.4;
 }
 
@@ -250,10 +238,9 @@ section {
 }
 
 /* Contact */
-
 .contact {
   background: #171717;
-  color: $color-light;
+  color: #ffffff;
 }
 
 .contact-form {
@@ -262,7 +249,7 @@ section {
 
 .contact-form label {
   font-size: 18px;
-  font-family: $font-header;
+  font-family: "Open Sans", sans-serif;
 }
 
 input,
@@ -270,7 +257,7 @@ textarea {
   display: block;
   margin: 0 auto 30px;
   background: inherit;
-  color: $color-light;
+  color: #ffffff;
   border: 1px solid #ccc;
 }
 
@@ -292,24 +279,29 @@ input:valid {
   border: 1px solid #55ee70;
 }
 
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Raleway", sans-serif;
+}
+
 input::placeholder,
 textarea::placeholder {
-  font-family: $font-textarea;
+  font-family: "Raleway", sans-serif;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  font-family: $font-textarea;
+  font-family: "Raleway", sans-serif;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  font-family: $font-textarea;
+  font-family: "Raleway", sans-serif;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  font-family: $font-textarea;
+  font-family: "Raleway", sans-serif;
 }
 
 input:placeholder-shown,
@@ -318,9 +310,9 @@ textarea:placeholder-shown {
 }
 
 /* Footer */
-
 footer {
   background: #242424;
-  color: $color-light;
+  color: #ffffff;
   padding: 10px 0;
 }
+/*# sourceMappingURL=style.css.map */
